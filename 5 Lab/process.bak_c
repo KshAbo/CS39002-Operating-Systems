@@ -1,0 +1,336 @@
+#include "shared.c"
+#include <stdio.h>
+#include <sys/shm.h>
+#include <unistd.h>
+
+// SHARED VARIABLES
+int queue_shm_id = -1;
+int pcb_table_shm_id = -1;
+int timer_shm_id = -1;
+
+int queue_sem_id = -1;
+int pcb_sem_id = -1;
+int timer_sem_id = -1;
+int sync_sem_id = -1;
+/////////////////////////
+
+circular_queue* rq_ptr = NULL;
+process_control_block* pcb_table_ptr = NULL;
+int* timer_ptr = NULL;
+
+int local_time = 0;
+
+int process_serial = -1;
+int process_arrival = -1;
+int process_priority = -1;
+int burst_times[CPU_BURST_CNT + IO_BURST_CNT];
+int burst_idx = -1;
+int rem_burst_time = -1;
+int got_sigusr1 = 0;
+
+
+void initIpc(){
+    queue_shm_id = shmget((key_t)KEY1, sizeof(circular_queue), 0666 | IPC_CREAT);
+    pcb_table_shm_id = shmget((key_t)KEY2, sizeof(process_control_block) * N, 0666 | IPC_CREAT);
+    timer_shm_id = shmget((key_t)KEY3, sizeof(int) * 5, 0666 | IPC_CREAT);
+
+    queue_sem_id = semget((key_t)KEY1, 1, 0666 | IPC_CREAT);
+    pcb_sem_id = semget((key_t)KEY2, 1, 0666 | IPC_CREAT);
+    timer_sem_id = semget((key_t)KEY3, 1, 0666 | IPC_CREAT);
+    sync_sem_id = semget((key_t)KEY4, 1, 0666 | IPC_CREAT);
+
+    rq_ptr = shmat(queue_shm_id, NULL, 0);
+    pcb_table_ptr = shmat(pcb_table_shm_id, NULL, 0);
+    timer_ptr = shmat(timer_shm_id, NULL, 0);
+
+}
+
+void quit(){
+    if(queue_shm_id != -1)
+        shmdt(rq_ptr);
+    if(pcb_table_shm_id != -1)
+        shmdt(pcb_table_ptr);
+    if(timer_shm_id != -1)
+        shmdt(timer_ptr);
+
+    // if(queue_sem_id != -1)
+    //     semctl(queue_sem_id, 0, IPC_RMID, NULL);
+    // if(pcb_sem_id != -1)
+    //     semctl(pcb_sem_id, 0, IPC_RMID, NULL);
+    // if(timer_sem_id != -1)
+    //     semctl(timer_sem_id, 0, IPC_RMID, NULL);
+    // if(sync_sem_id != -1)
+    //     semctl(sync_sem_id, 0, IPC_RMID, NULL);
+
+    exit(0);
+}
+
+void initArgs(int argc, char* argv[]){
+    if(argc != 1 + 3 + CPU_BURST_CNT + IO_BURST_CNT){
+
+        printf("Usage:\n");
+        printf("\t./process <serial_num> <arrival_time> <priority - 0, 1, 2> ");
+        int cpu_burst_cnt = CPU_BURST_CNT;
+        int io_burst_cnt = IO_BURST_CNT;
+        for(int i = 0; i < CPU_BURST_CNT + IO_BURST_CNT; i++){
+            if(cpu_burst_cnt-- > 0)
+                printf("<cpu_burst> ");
+            if(io_burst_cnt-- > 0)
+                printf("<io_burst> ");
+        }
+        printf("\n");
+    }
+
+    process_serial = atoi(argv[1]);
+    process_arrival = atoi(argv[2]);
+    process_priority = atoi(argv[3]);
+
+    local_time = process_arrival;
+
+    for(int i = 0; i < CPU_BURST_CNT + IO_BURST_CNT; i++)
+        burst_times[i] = atoi(argv[4 + i]);
+
+    burst_idx = 0;
+    rem_burst_time = burst_times[burst_idx];
+
+    printf("[%d] Process %d: Arrival with priority = %d\n", local_time, process_serial, process_priority);
+
+    debugSuccess("[process :: initArgs] Successfully parsed the arguments of process %d\n", process_serial);
+}
+
+int getQuantum(int priority){
+    int q = 0;
+    if(priority == 0) q = PRIORITY_0_QUANTUM;
+    if(priority == 1) q = PRIORITY_1_QUANTUM;
+    if(priority == 2) q = PRIORITY_2_QUANTUM;
+    return q;
+}
+
+void scheduleNext(){
+
+    if(queueEmpty(rq_ptr) == 1){
+
+        // CPU goes idle
+        semWait(timer_sem_id);
+        timer_ptr[1] = -1;
+        timer_ptr[2] = -1;
+        semSignal(timer_sem_id);
+        printf("[%d] CPU goes idle\n",  local_time);
+        return;
+    }
+
+    semWait(queue_sem_id);
+    semWait(pcb_sem_id);
+    semWait(timer_sem_id);
+
+    int next_process_serial = queuePop(rq_ptr);
+    int prev_process_serial = timer_ptr[1];
+    pcb_table_ptr[next_process_serial].state = RUNNING;
+    timer_ptr[1] = next_process_serial;
+    timer_ptr[2] = local_time + getQuantum(pcb_table_ptr[next_process_serial].priority);
+
+    semSignal(timer_sem_id);
+    semSignal(pcb_sem_id);
+    semSignal(queue_sem_id);
+
+    if(prev_process_serial == -1){
+        printf("[%d] Process %d: Going from READY to RUNNING with next interrupt time = %d\n", local_time, next_process_serial, timer_ptr[2]);
+        debugLog("[%d] Process %d: Remaining burst time = %d\n", local_time, prev_process_serial, rem_burst_time);
+    }else{
+        printf("[%d] Process %d: Context switch to process %d with next interrupt time = %d\n", local_time, prev_process_serial, next_process_serial, timer_ptr[2]);
+        debugLog("[%d] Process %d: Remaining burst time = %d\n", local_time, prev_process_serial, rem_burst_time);
+    }
+
+}
+
+void bg(){
+    usleep(UPPER_DELTA * 1000);
+    int time = local_time + 1;
+
+    semWaitForZero(sync_sem_id);
+    local_time = time;
+}
+
+void io(){
+    usleep(UPPER_DELTA * 1000);
+    int time = local_time + 1;
+
+    semWaitForZero(sync_sem_id);
+    local_time = time;
+    rem_burst_time -= 1;
+}
+
+void cpu(int skip_wait){
+    if (!skip_wait) {
+        usleep(UPPER_DELTA * 1000);
+        int time = local_time + 1;
+
+        semWaitForZero(sync_sem_id);
+        local_time = time;
+    }
+    // If skipping wait, we assume local_time was updated by bg() already
+    
+    rem_burst_time -= 1;
+    debugLog("[process :: cpu] [%d] Process %d Remaining burst time: %d\n", local_time, process_serial, rem_burst_time);
+}
+
+void processLoop(){
+    int came_from_bg = 0;
+    while(1){
+        process_state state = pcb_table_ptr[process_serial].state;
+
+        if (got_sigusr1 && state != RUNNING) {
+            got_sigusr1 = 0; 
+        }
+
+        if(state == READY){
+
+            bg();        
+            came_from_bg = 1;
+
+        }else if(state == RUNNING){
+
+            if (came_from_bg) {
+                cpu(1);
+                came_from_bg = 0;
+            }else
+                cpu(0);
+
+            if(rem_burst_time <= 0){
+                got_sigusr1 = 0;
+
+                burst_idx++;
+                printf("[%d] Process %d: CPU burst %d complete\n", local_time, process_serial, (burst_idx + 1) / 2 - 1);
+
+                if(burst_idx >= CPU_BURST_CNT + IO_BURST_CNT){
+                    semWait(pcb_sem_id);
+                    pcb_table_ptr[process_serial].state = EXITED;
+                    semSignal(pcb_sem_id);
+
+                    printf("\t\t[%d] Process %d: Exiting\n", local_time, process_serial);
+
+                    semWait(timer_sem_id);
+                    timer_ptr[1] = -1; 
+                    semSignal(timer_sem_id);
+
+                    scheduleNext();
+                    quit();
+                }else{
+                    rem_burst_time = burst_times[burst_idx];
+
+                    semWait(pcb_sem_id);
+                    pcb_table_ptr[process_serial].state = IO;
+                    semSignal(pcb_sem_id);
+
+                    semWait(timer_sem_id);
+                    timer_ptr[1] = -1; 
+                    semSignal(timer_sem_id);
+
+                    scheduleNext();
+                }
+            }
+            else if(got_sigusr1){
+                got_sigusr1 = 0;
+
+                semWait(queue_sem_id);
+                queuePush(rq_ptr, process_serial);
+                semSignal(queue_sem_id);
+
+                semWait(pcb_sem_id);
+                pcb_table_ptr[process_serial].state = READY;
+                semSignal(pcb_sem_id);
+
+                printf("[%d] Process %d: Interrupted\n", local_time, process_serial);
+                scheduleNext();
+                continue;
+            }
+
+        }else if(state == IO){
+
+            io();
+            if(rem_burst_time <= 0){
+                burst_idx++;
+                if(burst_idx >= CPU_BURST_CNT + IO_BURST_CNT){
+
+                    printf("[%d] Process %d: IO burst %d complete\n", local_time, process_serial, (burst_idx) / 2 - 1);
+                    semWait(pcb_sem_id);
+                    pcb_table_ptr[process_serial].state = EXITED;
+                    semSignal(pcb_sem_id);
+
+                    printf("\t\t[%d] Process %d: Exiting\n", local_time, process_serial);
+
+                    scheduleNext();
+                    quit();
+                }else{
+                    rem_burst_time = burst_times[burst_idx];
+
+                    semWait(pcb_sem_id);
+                    pcb_table_ptr[process_serial].state = READY;
+                    semSignal(pcb_sem_id);
+
+                    semWait(queue_sem_id);
+                    queuePush(rq_ptr, process_serial);
+                    semSignal(queue_sem_id);
+
+                    printf("[%d] Process %d: IO burst %d complete\n", local_time, process_serial, (burst_idx) / 2 - 1);
+
+                    semWait(timer_sem_id);
+                    int running_pid = timer_ptr[1];
+                    semSignal(timer_sem_id);
+
+
+                    if (running_pid == -1) {
+                        scheduleNext();
+                    }
+                }
+            }
+        }
+    }
+}
+
+void interruptHandler(int signal){
+    quit();
+}
+
+void sigUsr1Handler(int signal){
+    debugLog("[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process %d\n", process_serial);
+    got_sigusr1 = 1;
+}
+
+int main(int argc, char *argv[]){
+
+    signal(SIGINT, interruptHandler);
+    signal(SIGUSR1, sigUsr1Handler);
+
+    initIpc();
+
+    initArgs(argc, argv);
+
+    if (process_serial == 0) {
+        debugLog("[Process 0] Starting the Timer...\n");
+        semSignal(sync_sem_id); 
+    }
+
+
+    semWait(queue_sem_id);
+    queuePush(rq_ptr, process_serial);
+    semSignal(queue_sem_id);
+    
+    semWait(pcb_sem_id);
+    pcb_table_ptr[process_serial].pid = getpid();
+    pcb_table_ptr[process_serial].priority = process_priority;
+    pcb_table_ptr[process_serial].state = READY;
+    semSignal(pcb_sem_id);
+    
+    semWait(timer_sem_id);
+    int current_running = timer_ptr[1];
+    semSignal(timer_sem_id);
+    
+    if (current_running == -1) {
+        scheduleNext();
+    }
+
+    processLoop();
+
+    return 0;
+}

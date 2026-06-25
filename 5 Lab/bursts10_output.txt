@@ -1,0 +1,672 @@
+[0] Launcher Ready
+[0] Process 0: Arrival with priority = 1
+[0] Process 0: Going from READY to RUNNING with next interrupt time = 5
+[5] Process 0: Interrupted
+[5] Process 0: Context switch to process 0 with next interrupt time = 10
+[7] Process 0: CPU burst 0 complete
+[7] CPU goes idle
+[17] Process 1: Arrival with priority = 0
+[17] Process 1: Going from READY to RUNNING with next interrupt time = 27
+[27] Process 1: Interrupted
+[27] Process 1: Context switch to process 1 with next interrupt time = 37
+[29] Process 1: CPU burst 0 complete
+[29] CPU goes idle
+[32] Process 0: IO burst 0 complete
+[32] Process 0: Going from READY to RUNNING with next interrupt time = 37
+[37] Process 0: Interrupted
+[37] Process 0: Context switch to process 0 with next interrupt time = 42
+[42] Process 0: Interrupted
+[42] Process 0: Context switch to process 0 with next interrupt time = 47
+[47] Process 0: Interrupted
+[47] Process 0: Context switch to process 0 with next interrupt time = 52
+[51] Process 0: CPU burst 1 complete
+[51] CPU goes idle
+[55] Process 1: IO burst 0 complete
+[55] Process 1: Going from READY to RUNNING with next interrupt time = 65
+[56] Process 2: Arrival with priority = 0
+[57] Process 1: CPU burst 1 complete
+[57] Process 2: Going from READY to RUNNING with next interrupt time = 67
+[67] Process 2: Interrupted
+[67] Process 2: Context switch to process 2 with next interrupt time = 77
+[74] Process 2: CPU burst 0 complete
+[74] CPU goes idle
+[78] Process 0: IO burst 1 complete
+[78] Process 0: Going from READY to RUNNING with next interrupt time = 83
+[80] Process 1: IO burst 1 complete
+[80] Process 0: CPU burst 2 complete
+[80] Process 1: Going from READY to RUNNING with next interrupt time = 90
+[83] Process 3: Arrival with priority = 0
+[90] Process 1: Interrupted
+[90] Process 1: Context switch to process 3 with next interrupt time = 100
+[97] Process 4: Arrival with priority = 0
+[99] Process 3: CPU burst 0 complete
+[99] Process 1: Going from READY to RUNNING with next interrupt time = 109
+[100] Process 2: IO burst 0 complete
+[102] Process 1: CPU burst 2 complete
+[102] Process 4: Going from READY to RUNNING with next interrupt time = 112
+[108] Process 0: IO burst 2 complete
+[111] Process 4: CPU burst 0 complete
+[111] Process 2: Going from READY to RUNNING with next interrupt time = 121
+[116] Process 2: CPU burst 1 complete
+[116] Process 0: Going from READY to RUNNING with next interrupt time = 121
+[121] Process 0: Interrupted
+[121] Process 0: Context switch to process 0 with next interrupt time = 126
+[124] Process 1: IO burst 2 complete
+[125] Process 3: IO burst 0 complete
+[126] Process 0: Interrupted
+[126] Process 0: Context switch to process 1 with next interrupt time = 136
+[127] Process 5: Arrival with priority = 1
+[136] Process 1: Interrupted
+[136] Process 1: Context switch to process 3 with next interrupt time = 146
+[138] Process 4: IO burst 0 complete
+[143] Process 3: CPU burst 1 complete
+[143] Process 0: Going from READY to RUNNING with next interrupt time = 148
+[144] Process 2: IO burst 1 complete
+[148] Process 0: Interrupted
+[148] Process 0: Context switch to process 5 with next interrupt time = 153
+[153] Process 5: Interrupted
+[153] Process 5: Context switch to process 1 with next interrupt time = 163
+[155] Process 1: CPU burst 3 complete
+[155] Process 4: Going from READY to RUNNING with next interrupt time = 165
+[159] Process 4: CPU burst 1 complete
+[159] Process 2: Going from READY to RUNNING with next interrupt time = 169
+[164] Process 6: Arrival with priority = 1
+[165] Process 3: IO burst 1 complete
+[169] Process 2: Interrupted
+[169] Process 2: Context switch to process 0 with next interrupt time = 174
+[172] Process 0: CPU burst 3 complete
+[172] Process 5: Going from READY to RUNNING with next interrupt time = 177
+[177] Process 5: Interrupted
+[177] Process 5: Context switch to process 6 with next interrupt time = 182
+[180] Process 4: IO burst 1 complete
+[182] Process 6: Interrupted
+[182] Process 6: Context switch to process 3 with next interrupt time = 192
+[183] Process 1: IO burst 3 complete
+[190] Process 7: Arrival with priority = 2
+[191] Process 3: CPU burst 2 complete
+[191] Process 2: Going from READY to RUNNING with next interrupt time = 201
+[194] Process 2: CPU burst 2 complete
+[194] Process 5: Going from READY to RUNNING with next interrupt time = 199
+[196] Process 5: CPU burst 0 complete
+[196] Process 4: Going from READY to RUNNING with next interrupt time = 206
+[202] Process 0: IO burst 3 complete
+[205] Process 4: CPU burst 2 complete
+[205] Process 6: Going from READY to RUNNING with next interrupt time = 210
+[209] Process 8: Arrival with priority = 0
+[210] Process 6: Interrupted
+[210] Process 6: Context switch to process 1 with next interrupt time = 220
+[218] Process 5: IO burst 0 complete
+[219] Process 1: CPU burst 4 complete
+[219] Process 2: IO burst 2 complete
+[219] Process 7: Going from READY to RUNNING with next interrupt time = 221
+[221] Process 3: IO burst 2 complete
+[221] Process 0: Going from READY to RUNNING with next interrupt time = 226
+[224] Process 0: CPU burst 4 complete
+[224] Process 8: Going from READY to RUNNING with next interrupt time = 234
+[229] Process 4: IO burst 2 complete
+[230] Process 7: CPU burst 0 complete
+[234] Process 9: Arrival with priority = 2
+[234] Process 6: Going from READY to RUNNING with next interrupt time = 239
+[235] Process 6: CPU burst 0 complete
+[235] Process 5: Going from READY to RUNNING with next interrupt time = 240
+[239] Process 5: CPU burst 1 complete
+[239] Process 2: Going from READY to RUNNING with next interrupt time = 249
+[241] Process 8: CPU burst 0 complete
+[245] Process 1: IO burst 4 complete
+[245] Process 0: IO burst 4 complete
+[249] Process 2: Interrupted
+[249] Process 2: Context switch to process 3 with next interrupt time = 259
+[253] Process 7: IO burst 0 complete
+[259] Process 3: Interrupted
+[259] Process 3: Context switch to process 4 with next interrupt time = 269
+[262] Process 6: IO burst 0 complete
+[265] Process 4: CPU burst 3 complete
+[265] Process 5: IO burst 1 complete
+[265] Process 9: Going from READY to RUNNING with next interrupt time = 267
+[267] Process 9: Interrupted
+[267] Process 9: Context switch to process 1 with next interrupt time = 277
+[269] Process 8: IO burst 0 complete
+[277] Process 1: Interrupted
+[277] Process 1: Context switch to process 0 with next interrupt time = 282
+[282] Process 0: Interrupted
+[282] Process 0: Context switch to process 2 with next interrupt time = 292
+[286] Process 2: CPU burst 3 complete
+[286] Process 7: Going from READY to RUNNING with next interrupt time = 288
+[288] Process 7: Interrupted
+[288] Process 7: Context switch to process 3 with next interrupt time = 298
+[293] Process 4: IO burst 3 complete
+[294] Process 3: CPU burst 3 complete
+[294] Process 6: Going from READY to RUNNING with next interrupt time = 299
+[298] Process 6: CPU burst 1 complete
+[298] Process 5: Going from READY to RUNNING with next interrupt time = 303
+[303] Process 5: Interrupted
+[303] Process 5: Context switch to process 9 with next interrupt time = 305
+[305] Process 9: Interrupted
+[305] Process 9: Context switch to process 8 with next interrupt time = 315
+[308] Process 8: CPU burst 1 complete
+[308] Process 1: Going from READY to RUNNING with next interrupt time = 318
+[310] Process 2: IO burst 3 complete
+[312] Process 1: CPU burst 5 complete
+[312] Process 0: Going from READY to RUNNING with next interrupt time = 317
+[317] Process 0: Interrupted
+[317] Process 0: Context switch to process 7 with next interrupt time = 319
+[319] Process 7: Interrupted
+[319] Process 7: Context switch to process 4 with next interrupt time = 329
+[322] Process 3: IO burst 3 complete
+[326] Process 6: IO burst 1 complete
+[329] Process 4: Interrupted
+[329] Process 4: Context switch to process 5 with next interrupt time = 334
+[333] Process 5: CPU burst 2 complete
+[333] Process 9: Going from READY to RUNNING with next interrupt time = 335
+[335] Process 9: Interrupted
+[335] Process 9: Context switch to process 2 with next interrupt time = 345
+[336] Process 1: IO burst 5 complete
+[338] Process 8: IO burst 1 complete
+[345] Process 2: Interrupted
+[345] Process 2: Context switch to process 0 with next interrupt time = 350
+[350] Process 0: Interrupted
+[350] Process 0: Context switch to process 7 with next interrupt time = 352
+[352] Process 7: Interrupted
+[352] Process 7: Context switch to process 3 with next interrupt time = 362
+[353] Process 5: IO burst 2 complete
+[361] Process 3: CPU burst 4 complete
+[361] Process 6: Going from READY to RUNNING with next interrupt time = 366
+[366] Process 6: Interrupted
+[366] Process 6: Context switch to process 4 with next interrupt time = 376
+[376] Process 4: CPU burst 4 complete
+[376] Process 9: Going from READY to RUNNING with next interrupt time = 378
+[378] Process 9: Interrupted
+[378] Process 9: Context switch to process 1 with next interrupt time = 388
+[386] Process 3: IO burst 4 complete
+[388] Process 1: Interrupted
+[388] Process 1: Context switch to process 8 with next interrupt time = 398
+[398] Process 8: Interrupted
+[398] Process 8: Context switch to process 2 with next interrupt time = 408
+[405] Process 4: IO burst 4 complete
+[408] Process 2: CPU burst 4 complete
+[408] Process 0: Going from READY to RUNNING with next interrupt time = 413
+[409] Process 0: CPU burst 5 complete
+[409] Process 7: Going from READY to RUNNING with next interrupt time = 411
+[411] Process 7: Interrupted
+[411] Process 7: Context switch to process 5 with next interrupt time = 416
+[416] Process 5: Interrupted
+[416] Process 5: Context switch to process 6 with next interrupt time = 421
+[417] Process 6: CPU burst 2 complete
+[417] Process 9: Going from READY to RUNNING with next interrupt time = 419
+[419] Process 9: Interrupted
+[419] Process 9: Context switch to process 3 with next interrupt time = 429
+[421] Process 3: CPU burst 5 complete
+[421] Process 1: Going from READY to RUNNING with next interrupt time = 431
+[431] Process 1: CPU burst 6 complete
+[431] Process 8: Going from READY to RUNNING with next interrupt time = 441
+[432] Process 0: IO burst 5 complete
+[434] Process 2: IO burst 4 complete
+[438] Process 6: IO burst 2 complete
+[440] Process 8: CPU burst 2 complete
+[440] Process 4: Going from READY to RUNNING with next interrupt time = 450
+[444] Process 3: IO burst 5 complete
+[450] Process 4: CPU burst 5 complete
+[450] Process 7: Going from READY to RUNNING with next interrupt time = 452
+[451] Process 7: CPU burst 1 complete
+[451] Process 5: Going from READY to RUNNING with next interrupt time = 456
+[456] Process 1: IO burst 6 complete
+[456] Process 9: Going from READY to RUNNING with next interrupt time = 458
+[458] Process 9: Interrupted
+[458] Process 9: Context switch to process 0 with next interrupt time = 463
+[463] Process 0: Interrupted
+[463] Process 0: Context switch to process 2 with next interrupt time = 473
+[464] Process 8: IO burst 2 complete
+[466] Process 5: CPU burst 3 complete
+[471] Process 4: IO burst 5 complete
+[473] Process 2: Interrupted
+[473] Process 2: Context switch to process 6 with next interrupt time = 478
+[478] Process 6: CPU burst 3 complete
+[478] Process 3: Going from READY to RUNNING with next interrupt time = 488
+[481] Process 3: CPU burst 6 complete
+[481] Process 7: IO burst 1 complete
+[481] Process 1: Going from READY to RUNNING with next interrupt time = 491
+[489] Process 1: CPU burst 7 complete
+[489] Process 9: Going from READY to RUNNING with next interrupt time = 491
+[491] Process 9: Interrupted
+[491] Process 9: Context switch to process 0 with next interrupt time = 496
+[494] Process 5: IO burst 3 complete
+[496] Process 0: Interrupted
+[496] Process 0: Context switch to process 8 with next interrupt time = 506
+[501] Process 3: IO burst 6 complete
+[506] Process 8: Interrupted
+[506] Process 8: Context switch to process 4 with next interrupt time = 516
+[508] Process 6: IO burst 3 complete
+[510] Process 1: IO burst 7 complete
+[516] Process 4: Interrupted
+[516] Process 4: Context switch to process 2 with next interrupt time = 526
+[525] Process 2: CPU burst 5 complete
+[525] Process 7: Going from READY to RUNNING with next interrupt time = 527
+[527] Process 7: Interrupted
+[527] Process 7: Context switch to process 9 with next interrupt time = 529
+[529] Process 9: CPU burst 0 complete
+[529] Process 5: Going from READY to RUNNING with next interrupt time = 534
+[531] Process 5: CPU burst 4 complete
+[531] Process 0: Going from READY to RUNNING with next interrupt time = 536
+[536] Process 0: Interrupted
+[536] Process 0: Context switch to process 3 with next interrupt time = 546
+[545] Process 2: IO burst 5 complete
+[546] Process 3: Interrupted
+[546] Process 3: Context switch to process 8 with next interrupt time = 556
+[549] Process 8: CPU burst 3 complete
+[549] Process 6: Going from READY to RUNNING with next interrupt time = 554
+[551] Process 6: CPU burst 4 complete
+[551] Process 1: Going from READY to RUNNING with next interrupt time = 561
+[554] Process 5: IO burst 4 complete
+[555] Process 9: IO burst 0 complete
+[561] Process 1: Interrupted
+[561] Process 1: Context switch to process 4 with next interrupt time = 571
+[568] Process 4: CPU burst 6 complete
+[568] Process 7: Going from READY to RUNNING with next interrupt time = 570
+[570] Process 7: Interrupted
+[570] Process 7: Context switch to process 0 with next interrupt time = 575
+[571] Process 8: IO burst 3 complete
+[575] Process 0: CPU burst 6 complete
+[575] Process 2: Going from READY to RUNNING with next interrupt time = 585
+[576] Process 6: IO burst 4 complete
+[585] Process 2: Interrupted
+[585] Process 2: Context switch to process 3 with next interrupt time = 595
+[592] Process 3: CPU burst 7 complete
+[592] Process 5: Going from READY to RUNNING with next interrupt time = 597
+[597] Process 5: Interrupted
+[597] Process 5: Context switch to process 9 with next interrupt time = 599
+[598] Process 0: IO burst 6 complete
+[598] Process 4: IO burst 6 complete
+[599] Process 9: Interrupted
+[599] Process 9: Context switch to process 1 with next interrupt time = 609
+[603] Process 1: CPU burst 8 complete
+[603] Process 7: Going from READY to RUNNING with next interrupt time = 605
+[605] Process 7: Interrupted
+[605] Process 7: Context switch to process 8 with next interrupt time = 615
+[612] Process 3: IO burst 7 complete
+[615] Process 8: Interrupted
+[615] Process 8: Context switch to process 6 with next interrupt time = 620
+[620] Process 6: Interrupted
+[620] Process 6: Context switch to process 2 with next interrupt time = 630
+[624] Process 1: IO burst 8 complete
+[626] Process 2: CPU burst 6 complete
+[626] Process 5: Going from READY to RUNNING with next interrupt time = 631
+[631] Process 5: Interrupted
+[631] Process 5: Context switch to process 0 with next interrupt time = 636
+[636] Process 0: Interrupted
+[636] Process 0: Context switch to process 4 with next interrupt time = 646
+[640] Process 4: CPU burst 7 complete
+[640] Process 9: Going from READY to RUNNING with next interrupt time = 642
+[642] Process 9: Interrupted
+[642] Process 9: Context switch to process 7 with next interrupt time = 644
+[644] Process 7: Interrupted
+[644] Process 7: Context switch to process 3 with next interrupt time = 654
+[654] Process 2: IO burst 6 complete
+[654] Process 3: CPU burst 8 complete
+[654] Process 8: Going from READY to RUNNING with next interrupt time = 664
+[663] Process 8: CPU burst 4 complete
+[663] Process 6: Going from READY to RUNNING with next interrupt time = 668
+[664] Process 4: IO burst 7 complete
+[668] Process 6: Interrupted
+[668] Process 6: Context switch to process 1 with next interrupt time = 678
+[676] Process 1: CPU burst 9 complete
+[676] Process 5: Going from READY to RUNNING with next interrupt time = 681
+[681] Process 5: Interrupted
+[681] Process 5: Context switch to process 0 with next interrupt time = 686
+[682] Process 3: IO burst 8 complete
+[686] Process 0: Interrupted
+[686] Process 0: Context switch to process 9 with next interrupt time = 688
+[688] Process 9: Interrupted
+[688] Process 9: Context switch to process 7 with next interrupt time = 690
+[689] Process 8: IO burst 4 complete
+[690] Process 7: CPU burst 2 complete
+[690] Process 2: Going from READY to RUNNING with next interrupt time = 700
+[700] Process 1: IO burst 9 complete
+[700] Process 4: Going from READY to RUNNING with next interrupt time = 710
+[705] Process 2: CPU burst 7 complete
+[707] Process 4: CPU burst 8 complete
+[707] Process 6: Going from READY to RUNNING with next interrupt time = 712
+[708] Process 6: CPU burst 5 complete
+[708] Process 5: Going from READY to RUNNING with next interrupt time = 713
+[710] Process 5: CPU burst 5 complete
+[710] Process 3: Going from READY to RUNNING with next interrupt time = 720
+[714] Process 7: IO burst 2 complete
+[720] Process 3: Interrupted
+[720] Process 3: Context switch to process 0 with next interrupt time = 725
+[724] Process 0: CPU burst 7 complete
+[724] Process 9: Going from READY to RUNNING with next interrupt time = 726
+[726] Process 9: CPU burst 1 complete
+[726] Process 8: Going from READY to RUNNING with next interrupt time = 736
+[730] Process 5: IO burst 5 complete
+[731] Process 2: IO burst 7 complete
+[732] Process 4: IO burst 8 complete
+[734] Process 8: CPU burst 5 complete
+[734] Process 1: Going from READY to RUNNING with next interrupt time = 744
+[735] Process 6: IO burst 5 complete
+[739] Process 1: CPU burst 10 complete
+[739] Process 7: Going from READY to RUNNING with next interrupt time = 741
+			[739] Process 1: Exiting
+[741] Process 7: Interrupted
+[741] Process 7: Context switch to process 3 with next interrupt time = 751
+[748] Process 0: IO burst 7 complete
+[750] Process 3: CPU burst 9 complete
+[750] Process 5: Going from READY to RUNNING with next interrupt time = 755
+[751] Process 9: IO burst 1 complete
+[755] Process 5: Interrupted
+[755] Process 5: Context switch to process 2 with next interrupt time = 765
+[759] Process 2: CPU burst 8 complete
+[759] Process 4: Going from READY to RUNNING with next interrupt time = 769
+[764] Process 8: IO burst 5 complete
+[769] Process 4: Interrupted
+[769] Process 4: Context switch to process 6 with next interrupt time = 774
+[771] Process 6: CPU burst 6 complete
+[771] Process 7: Going from READY to RUNNING with next interrupt time = 773
+[773] Process 7: Interrupted
+[773] Process 7: Context switch to process 0 with next interrupt time = 778
+[774] Process 3: IO burst 9 complete
+[778] Process 0: Interrupted
+[778] Process 0: Context switch to process 9 with next interrupt time = 780
+[780] Process 9: Interrupted
+[780] Process 9: Context switch to process 5 with next interrupt time = 785
+[784] Process 2: IO burst 8 complete
+[785] Process 5: Interrupted
+[785] Process 5: Context switch to process 8 with next interrupt time = 795
+[793] Process 6: IO burst 6 complete
+[795] Process 8: Interrupted
+[795] Process 8: Context switch to process 4 with next interrupt time = 805
+[800] Process 4: CPU burst 9 complete
+[800] Process 7: Going from READY to RUNNING with next interrupt time = 802
+[802] Process 7: Interrupted
+[802] Process 7: Context switch to process 3 with next interrupt time = 812
+[812] Process 3: Interrupted
+[812] Process 3: Context switch to process 0 with next interrupt time = 817
+[817] Process 0: Interrupted
+[817] Process 0: Context switch to process 9 with next interrupt time = 819
+[819] Process 9: Interrupted
+[819] Process 9: Context switch to process 2 with next interrupt time = 829
+[827] Process 4: IO burst 9 complete
+[827] Process 2: CPU burst 9 complete
+[827] Process 5: Going from READY to RUNNING with next interrupt time = 832
+[832] Process 5: Interrupted
+[832] Process 5: Context switch to process 6 with next interrupt time = 837
+[837] Process 6: Interrupted
+[837] Process 6: Context switch to process 8 with next interrupt time = 847
+[845] Process 8: CPU burst 6 complete
+[845] Process 7: Going from READY to RUNNING with next interrupt time = 847
+[847] Process 7: Interrupted
+[847] Process 7: Context switch to process 3 with next interrupt time = 857
+[853] Process 3: CPU burst 10 complete
+[853] Process 0: Going from READY to RUNNING with next interrupt time = 858
+			[853] Process 3: Exiting
+[855] Process 2: IO burst 9 complete
+[857] Process 0: CPU burst 8 complete
+[857] Process 9: Going from READY to RUNNING with next interrupt time = 859
+[858] Process 9: CPU burst 2 complete
+[858] Process 4: Going from READY to RUNNING with next interrupt time = 868
+[868] Process 4: Interrupted
+[868] Process 4: Context switch to process 5 with next interrupt time = 873
+[873] Process 5: CPU burst 6 complete
+[873] Process 6: Going from READY to RUNNING with next interrupt time = 878
+[875] Process 8: IO burst 6 complete
+[878] Process 9: IO burst 2 complete
+[878] Process 7: Going from READY to RUNNING with next interrupt time = 880
+[879] Process 7: CPU burst 3 complete
+[879] Process 2: Going from READY to RUNNING with next interrupt time = 889
+[886] Process 0: IO burst 8 complete
+[888] Process 6: CPU burst 7 complete
+[889] Process 2: Interrupted
+[889] Process 2: Context switch to process 4 with next interrupt time = 899
+[890] Process 4: CPU burst 10 complete
+[890] Process 8: Going from READY to RUNNING with next interrupt time = 900
+			[890] Process 4: Exiting
+[895] Process 8: CPU burst 7 complete
+[895] Process 9: Going from READY to RUNNING with next interrupt time = 897
+[897] Process 9: Interrupted
+[897] Process 9: Context switch to process 0 with next interrupt time = 902
+[901] Process 5: IO burst 6 complete
+[902] Process 0: Interrupted
+[902] Process 0: Context switch to process 2 with next interrupt time = 912
+[905] Process 2: CPU burst 10 complete
+[905] Process 7: IO burst 3 complete
+[905] Process 9: Going from READY to RUNNING with next interrupt time = 907
+			[905] Process 2: Exiting
+[907] Process 9: Interrupted
+[907] Process 9: Context switch to process 5 with next interrupt time = 912
+[912] Process 5: Interrupted
+[912] Process 5: Context switch to process 0 with next interrupt time = 917
+[915] Process 0: CPU burst 9 complete
+[915] Process 6: IO burst 7 complete
+[915] Process 8: IO burst 7 complete
+[915] Process 7: Going from READY to RUNNING with next interrupt time = 917
+[917] Process 7: Interrupted
+[917] Process 7: Context switch to process 9 with next interrupt time = 919
+[919] Process 9: Interrupted
+[919] Process 9: Context switch to process 5 with next interrupt time = 924
+[924] Process 5: Interrupted
+[924] Process 5: Context switch to process 6 with next interrupt time = 929
+[929] Process 6: CPU burst 8 complete
+[929] Process 8: Going from READY to RUNNING with next interrupt time = 939
+[939] Process 8: Interrupted
+[939] Process 8: Context switch to process 7 with next interrupt time = 941
+[941] Process 7: Interrupted
+[941] Process 7: Context switch to process 9 with next interrupt time = 943
+[943] Process 9: Interrupted
+[943] Process 9: Context switch to process 5 with next interrupt time = 948
+[944] Process 0: IO burst 9 complete
+[947] Process 5: CPU burst 7 complete
+[947] Process 8: Going from READY to RUNNING with next interrupt time = 957
+[954] Process 8: CPU burst 8 complete
+[954] Process 7: Going from READY to RUNNING with next interrupt time = 956
+[955] Process 6: IO burst 8 complete
+[956] Process 7: Interrupted
+[956] Process 7: Context switch to process 9 with next interrupt time = 958
+[958] Process 9: Interrupted
+[958] Process 9: Context switch to process 0 with next interrupt time = 963
+[963] Process 0: Interrupted
+[963] Process 0: Context switch to process 6 with next interrupt time = 968
+[968] Process 5: IO burst 7 complete
+[968] Process 7: Going from READY to RUNNING with next interrupt time = 970
+[970] Process 7: Interrupted
+[970] Process 7: Context switch to process 9 with next interrupt time = 972
+[971] Process 6: CPU burst 9 complete
+[972] Process 9: Interrupted
+[972] Process 9: Context switch to process 0 with next interrupt time = 977
+[976] Process 8: IO burst 8 complete
+[977] Process 0: Interrupted
+[977] Process 0: Context switch to process 5 with next interrupt time = 982
+[982] Process 5: Interrupted
+[982] Process 5: Context switch to process 7 with next interrupt time = 984
+[984] Process 7: Interrupted
+[984] Process 7: Context switch to process 9 with next interrupt time = 986
+[986] Process 9: Interrupted
+[986] Process 9: Context switch to process 8 with next interrupt time = 996
+[992] Process 6: IO burst 9 complete
+[996] Process 8: Interrupted
+[996] Process 8: Context switch to process 0 with next interrupt time = 1001
+[1001] Process 0: CPU burst 10 complete
+[1001] Process 5: Going from READY to RUNNING with next interrupt time = 1006
+			[1001] Process 0: Exiting
+[1002] Process 5: CPU burst 8 complete
+[1002] Process 7: Going from READY to RUNNING with next interrupt time = 1004
+[1004] Process 7: Interrupted
+[1004] Process 7: Context switch to process 9 with next interrupt time = 1006
+[1006] Process 9: Interrupted
+[1006] Process 9: Context switch to process 6 with next interrupt time = 1011
+[1011] Process 6: Interrupted
+[1011] Process 6: Context switch to process 8 with next interrupt time = 1021
+[1016] Process 8: CPU burst 9 complete
+[1016] Process 7: Going from READY to RUNNING with next interrupt time = 1018
+[1017] Process 7: CPU burst 4 complete
+[1017] Process 9: Going from READY to RUNNING with next interrupt time = 1019
+[1019] Process 9: CPU burst 3 complete
+[1019] Process 6: Going from READY to RUNNING with next interrupt time = 1024
+[1024] Process 5: IO burst 8 complete
+[1024] Process 5: Going from READY to RUNNING with next interrupt time = 1029
+[1029] Process 6: CPU burst 10 complete
+[1029] CPU goes idle
+			[1029] Process 6: Exiting
+[1037] Process 5: CPU burst 9 complete
+[1037] CPU goes idle
+[1042] Process 7: IO burst 4 complete
+[1042] Process 7: Going from READY to RUNNING with next interrupt time = 1044
+[1044] Process 7: Interrupted
+[1044] Process 7: Context switch to process 7 with next interrupt time = 1046
+[1045] Process 8: IO burst 9 complete
+[1045] Process 7: CPU burst 5 complete
+[1045] Process 8: Going from READY to RUNNING with next interrupt time = 1055
+[1046] Process 9: IO burst 3 complete
+[1055] Process 8: CPU burst 10 complete
+[1055] Process 9: Going from READY to RUNNING with next interrupt time = 1057
+			[1055] Process 8: Exiting
+[1057] Process 9: Interrupted
+[1057] Process 9: Context switch to process 9 with next interrupt time = 1059
+[1059] Process 9: Interrupted
+[1059] Process 9: Context switch to process 9 with next interrupt time = 1061
+[1061] Process 9: Interrupted
+[1061] Process 9: Context switch to process 9 with next interrupt time = 1063
+[1063] Process 9: Interrupted
+[1063] Process 9: Context switch to process 9 with next interrupt time = 1065
+[1064] Process 9: CPU burst 4 complete
+[1064] CPU goes idle
+[1065] Process 5: IO burst 9 complete
+[1065] Process 5: Going from READY to RUNNING with next interrupt time = 1070
+[1070] Process 5: Interrupted
+[1070] Process 5: Context switch to process 5 with next interrupt time = 1075
+[1075] Process 7: IO burst 5 complete
+[1075] Process 7: Going from READY to RUNNING with next interrupt time = 1077
+[1077] Process 7: Interrupted
+[1077] Process 7: Context switch to process 7 with next interrupt time = 1079
+[1078] Process 5: CPU burst 10 complete
+[1078] CPU goes idle
+			[1078] Process 5: Exiting
+[1081] Process 7: CPU burst 6 complete
+[1081] CPU goes idle
+[1092] Process 9: IO burst 4 complete
+[1092] Process 9: Going from READY to RUNNING with next interrupt time = 1094
+[1094] Process 9: Interrupted
+[1094] Process 9: Context switch to process 9 with next interrupt time = 1096
+[1096] Process 9: Interrupted
+[1096] Process 9: Context switch to process 9 with next interrupt time = 1098
+[1098] Process 9: Interrupted
+[1098] Process 9: Context switch to process 9 with next interrupt time = 1100
+[1100] Process 9: Interrupted
+[1100] Process 9: Context switch to process 9 with next interrupt time = 1102
+[1102] Process 9: Interrupted
+[1102] Process 9: Context switch to process 9 with next interrupt time = 1104
+[1103] Process 9: CPU burst 5 complete
+[1103] CPU goes idle
+[1107] Process 7: IO burst 6 complete
+[1107] Process 7: Going from READY to RUNNING with next interrupt time = 1109
+[1109] Process 7: Interrupted
+[1109] Process 7: Context switch to process 7 with next interrupt time = 1111
+[1111] Process 7: Interrupted
+[1111] Process 7: Context switch to process 7 with next interrupt time = 1113
+[1113] Process 7: Interrupted
+[1113] Process 7: Context switch to process 7 with next interrupt time = 1115
+[1115] Process 7: Interrupted
+[1115] Process 7: Context switch to process 7 with next interrupt time = 1117
+[1117] Process 7: Interrupted
+[1117] Process 7: Context switch to process 7 with next interrupt time = 1119
+[1119] Process 7: Interrupted
+[1119] Process 7: Context switch to process 7 with next interrupt time = 1121
+[1121] Process 7: Interrupted
+[1121] Process 7: Context switch to process 7 with next interrupt time = 1123
+[1123] Process 7: Interrupted
+[1123] Process 7: Context switch to process 7 with next interrupt time = 1125
+[1124] Process 7: CPU burst 7 complete
+[1124] CPU goes idle
+[1130] Process 9: IO burst 5 complete
+[1130] Process 9: Going from READY to RUNNING with next interrupt time = 1132
+[1132] Process 9: Interrupted
+[1132] Process 9: Context switch to process 9 with next interrupt time = 1134
+[1134] Process 9: Interrupted
+[1134] Process 9: Context switch to process 9 with next interrupt time = 1136
+[1136] Process 9: Interrupted
+[1136] Process 9: Context switch to process 9 with next interrupt time = 1138
+[1138] Process 9: Interrupted
+[1138] Process 9: Context switch to process 9 with next interrupt time = 1140
+[1140] Process 9: Interrupted
+[1140] Process 9: Context switch to process 9 with next interrupt time = 1142
+[1142] Process 9: Interrupted
+[1142] Process 9: Context switch to process 9 with next interrupt time = 1144
+[1144] Process 9: Interrupted
+[1144] Process 9: Context switch to process 9 with next interrupt time = 1146
+[1146] Process 9: Interrupted
+[1146] Process 9: Context switch to process 9 with next interrupt time = 1148
+[1148] Process 7: IO burst 7 complete
+[1148] Process 7: Going from READY to RUNNING with next interrupt time = 1150
+[1149] Process 9: CPU burst 6 complete
+[1149] CPU goes idle
+[1158] Process 7: CPU burst 8 complete
+[1158] CPU goes idle
+[1173] Process 9: IO burst 6 complete
+[1173] Process 9: Going from READY to RUNNING with next interrupt time = 1175
+[1175] Process 9: Interrupted
+[1175] Process 9: Context switch to process 9 with next interrupt time = 1177
+[1177] Process 9: Interrupted
+[1177] Process 9: Context switch to process 9 with next interrupt time = 1179
+[1179] Process 9: Interrupted
+[1179] Process 9: Context switch to process 9 with next interrupt time = 1181
+[1181] Process 9: Interrupted
+[1181] Process 9: Context switch to process 9 with next interrupt time = 1183
+[1183] Process 9: Interrupted
+[1183] Process 9: Context switch to process 9 with next interrupt time = 1185
+[1185] Process 7: IO burst 8 complete
+[1185] Process 7: Going from READY to RUNNING with next interrupt time = 1187
+[1187] Process 7: Interrupted
+[1187] Process 7: Context switch to process 7 with next interrupt time = 1189
+[1188] Process 7: CPU burst 9 complete
+[1188] CPU goes idle
+[1192] Process 9: CPU burst 7 complete
+[1192] CPU goes idle
+[1209] Process 7: IO burst 9 complete
+[1209] Process 7: Going from READY to RUNNING with next interrupt time = 1211
+[1211] Process 7: Interrupted
+[1211] Process 7: Context switch to process 7 with next interrupt time = 1213
+[1213] Process 7: Interrupted
+[1213] Process 7: Context switch to process 7 with next interrupt time = 1215
+[1215] Process 7: Interrupted
+[1215] Process 7: Context switch to process 7 with next interrupt time = 1217
+[1216] Process 9: IO burst 7 complete
+[1217] Process 7: Interrupted
+[1217] Process 7: Context switch to process 9 with next interrupt time = 1219
+[1219] Process 9: Interrupted
+[1219] Process 9: Context switch to process 7 with next interrupt time = 1221
+[1221] Process 7: Interrupted
+[1221] Process 7: Context switch to process 9 with next interrupt time = 1223
+[1223] Process 9: Interrupted
+[1223] Process 9: Context switch to process 7 with next interrupt time = 1225
+[1225] Process 7: Interrupted
+[1225] Process 7: Context switch to process 9 with next interrupt time = 1227
+[1227] Process 9: Interrupted
+[1227] Process 9: Context switch to process 7 with next interrupt time = 1229
+[1228] Process 7: CPU burst 10 complete
+[1228] Process 9: Going from READY to RUNNING with next interrupt time = 1230
+			[1228] Process 7: Exiting
+[1230] Process 9: Interrupted
+[1230] Process 9: Context switch to process 9 with next interrupt time = 1232
+[1232] Process 9: Interrupted
+[1232] Process 9: Context switch to process 9 with next interrupt time = 1234
+[1234] Process 9: Interrupted
+[1234] Process 9: Context switch to process 9 with next interrupt time = 1236
+[1236] Process 9: CPU burst 8 complete
+[1236] CPU goes idle
+[1262] Process 9: IO burst 8 complete
+[1262] Process 9: Going from READY to RUNNING with next interrupt time = 1264
+[1264] Process 9: Interrupted
+[1264] Process 9: Context switch to process 9 with next interrupt time = 1266
+[1266] Process 9: Interrupted
+[1266] Process 9: Context switch to process 9 with next interrupt time = 1268
+[1267] Process 9: CPU burst 9 complete
+[1267] CPU goes idle
+[1290] Process 9: IO burst 9 complete
+[1290] Process 9: Going from READY to RUNNING with next interrupt time = 1292
+[1292] Process 9: Interrupted
+[1292] Process 9: Context switch to process 9 with next interrupt time = 1294
+[1294] Process 9: Interrupted
+[1294] Process 9: Context switch to process 9 with next interrupt time = 1296
+[1296] Process 9: Interrupted
+[1296] Process 9: Context switch to process 9 with next interrupt time = 1298
+[1297] Process 9: CPU burst 10 complete
+[1297] CPU goes idle
+			[1297] Process 9: Exiting
+			[Launcher] All processes exited

@@ -1,0 +1,829 @@
+[0] Launcher Ready
+[launcher :: launcherLoop] Reading file bursts.txt
+[launcher] Forked Process 0 at time 0
+[0] Process 0: Arrival with priority = 2
+[process :: initArgs] Successfully parsed the arguments of process 0
+[Process 0] Starting the Timer...
+[timer] sync_sem_id got released
+[0] Process 0: Going from READY to RUNNING with next interrupt time = 2
+[0] Process 0: Remaining burst time = 7
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[2] Process 0: Interrupted
+[2] Process 0: Context switch to process 0 with next interrupt time = 4
+[2] Process 0: Remaining burst time = 5
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[4] Process 0: Interrupted
+[4] Process 0: Context switch to process 0 with next interrupt time = 6
+[4] Process 0: Remaining burst time = 3
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[6] Process 0: Interrupted
+[6] Process 0: Context switch to process 0 with next interrupt time = 8
+[6] Process 0: Remaining burst time = 1
+[7] Process 0: CPU burst 0 complete
+[7] CPU goes idle
+[launcher] Forked Process 1 at time 16
+[16] Process 1: Arrival with priority = 0
+[process :: initArgs] Successfully parsed the arguments of process 1
+[16] Process 1: Going from READY to RUNNING with next interrupt time = 26
+[16] Process 1: Remaining burst time = 15
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 1
+[26] Process 1: Interrupted
+[26] Process 1: Context switch to process 1 with next interrupt time = 36
+[26] Process 1: Remaining burst time = 5
+[31] Process 1: CPU burst 0 complete
+[31] CPU goes idle
+[37] Process 0: IO burst 0 complete
+[37] Process 0: Going from READY to RUNNING with next interrupt time = 39
+[37] Process 0: Remaining burst time = 5
+[launcher] Forked Process 2 at time 38
+[38] Process 2: Arrival with priority = 1
+[process :: initArgs] Successfully parsed the arguments of process 2
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[39] Process 0: Interrupted
+[39] Process 0: Context switch to process 2 with next interrupt time = 44
+[39] Process 0: Remaining burst time = 3
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 2
+[44] Process 2: Interrupted
+[44] Process 2: Context switch to process 0 with next interrupt time = 46
+[44] Process 2: Remaining burst time = 13
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[46] Process 0: Interrupted
+[46] Process 0: Context switch to process 2 with next interrupt time = 51
+[46] Process 0: Remaining burst time = 1
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 2
+[51] Process 2: Interrupted
+[51] Process 2: Context switch to process 0 with next interrupt time = 53
+[51] Process 2: Remaining burst time = 8
+[52] Process 0: CPU burst 1 complete
+[52] Process 2: Going from READY to RUNNING with next interrupt time = 57
+[52] Process 2: Remaining burst time = 28
+[launcher] Forked Process 3 at time 55
+[launcher] Input file exhausted. Waiting for children to finish...
+[55] Process 3: Arrival with priority = 2
+[process :: initArgs] Successfully parsed the arguments of process 3
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 2
+[57] Process 2: Interrupted
+[57] Process 2: Context switch to process 3 with next interrupt time = 59
+[57] Process 2: Remaining burst time = 3
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[59] Process 3: Interrupted
+[59] Process 3: Context switch to process 2 with next interrupt time = 64
+[59] Process 3: Remaining burst time = 5
+[61] Process 1: IO burst 0 complete
+[62] Process 2: CPU burst 0 complete
+[62] Process 3: Going from READY to RUNNING with next interrupt time = 64
+[62] Process 3: Remaining burst time = 27
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[64] Process 3: Interrupted
+[64] Process 3: Context switch to process 1 with next interrupt time = 74
+[64] Process 3: Remaining burst time = 3
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 1
+[74] Process 1: CPU burst 1 complete
+[74] Process 3: Going from READY to RUNNING with next interrupt time = 76
+[74] Process 3: Remaining burst time = 23
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[76] Process 3: Interrupted
+[76] Process 3: Context switch to process 3 with next interrupt time = 78
+[76] Process 3: Remaining burst time = 1
+[77] Process 3: CPU burst 0 complete
+[77] CPU goes idle
+[80] Process 0: IO burst 1 complete
+[80] Process 0: Going from READY to RUNNING with next interrupt time = 82
+[80] Process 0: Remaining burst time = 5
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[82] Process 0: Interrupted
+[82] Process 0: Context switch to process 0 with next interrupt time = 84
+[82] Process 0: Remaining burst time = 3
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[84] Process 0: Interrupted
+[84] Process 0: Context switch to process 0 with next interrupt time = 86
+[84] Process 0: Remaining burst time = 1
+[85] Process 0: CPU burst 2 complete
+[85] CPU goes idle
+[89] Process 2: IO burst 0 complete
+[89] Process 2: Going from READY to RUNNING with next interrupt time = 94
+[89] Process 2: Remaining burst time = 20
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 2
+[94] Process 2: Interrupted
+[94] Process 2: Context switch to process 2 with next interrupt time = 99
+[94] Process 2: Remaining burst time = 15
+[97] Process 1: IO burst 1 complete
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 2
+[99] Process 2: Interrupted
+[99] Process 2: Context switch to process 1 with next interrupt time = 109
+[99] Process 2: Remaining burst time = 10
+[104] Process 3: IO burst 0 complete
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 1
+[109] Process 1: Interrupted
+[109] Process 1: Context switch to process 2 with next interrupt time = 114
+[109] Process 1: Remaining burst time = 4
+[113] Process 0: IO burst 2 complete
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 2
+[114] Process 2: Interrupted
+[114] Process 2: Context switch to process 3 with next interrupt time = 116
+[114] Process 2: Remaining burst time = 5
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[116] Process 3: Interrupted
+[116] Process 3: Context switch to process 1 with next interrupt time = 126
+[116] Process 3: Remaining burst time = 4
+[120] Process 1: CPU burst 2 complete
+[120] Process 0: Going from READY to RUNNING with next interrupt time = 122
+[120] Process 0: Remaining burst time = 24
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[122] Process 0: Interrupted
+[122] Process 0: Context switch to process 2 with next interrupt time = 127
+[122] Process 0: Remaining burst time = 14
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 2
+[127] Process 2: CPU burst 1 complete
+[127] Process 3: Going from READY to RUNNING with next interrupt time = 129
+[127] Process 3: Remaining burst time = 26
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[129] Process 3: Interrupted
+[129] Process 3: Context switch to process 0 with next interrupt time = 131
+[129] Process 3: Remaining burst time = 2
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[131] Process 0: Interrupted
+[131] Process 0: Context switch to process 3 with next interrupt time = 133
+[131] Process 0: Remaining burst time = 12
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[133] Process 3: CPU burst 1 complete
+[133] Process 0: Going from READY to RUNNING with next interrupt time = 135
+[133] Process 0: Remaining burst time = 28
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[135] Process 0: Interrupted
+[135] Process 0: Context switch to process 0 with next interrupt time = 137
+[135] Process 0: Remaining burst time = 10
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[137] Process 0: Interrupted
+[137] Process 0: Context switch to process 0 with next interrupt time = 139
+[137] Process 0: Remaining burst time = 8
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[139] Process 0: Interrupted
+[139] Process 0: Context switch to process 0 with next interrupt time = 141
+[139] Process 0: Remaining burst time = 6
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[141] Process 0: Interrupted
+[141] Process 0: Context switch to process 0 with next interrupt time = 143
+[141] Process 0: Remaining burst time = 4
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[143] Process 0: Interrupted
+[143] Process 0: Context switch to process 0 with next interrupt time = 145
+[143] Process 0: Remaining burst time = 2
+[144] Process 1: IO burst 2 complete
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[145] Process 0: CPU burst 3 complete
+[145] Process 1: Going from READY to RUNNING with next interrupt time = 155
+[145] Process 1: Remaining burst time = 25
+[152] Process 1: CPU burst 3 complete
+[152] CPU goes idle
+[153] Process 2: IO burst 1 complete
+[153] Process 2: Going from READY to RUNNING with next interrupt time = 158
+[153] Process 2: Remaining burst time = 6
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 2
+[158] Process 2: Interrupted
+[158] Process 2: Context switch to process 2 with next interrupt time = 163
+[158] Process 2: Remaining burst time = 1
+[159] Process 2: CPU burst 2 complete
+[159] CPU goes idle
+[161] Process 3: IO burst 1 complete
+[161] Process 3: Going from READY to RUNNING with next interrupt time = 163
+[161] Process 3: Remaining burst time = 3
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[163] Process 3: Interrupted
+[163] Process 3: Context switch to process 3 with next interrupt time = 165
+[163] Process 3: Remaining burst time = 1
+[164] Process 3: CPU burst 2 complete
+[164] CPU goes idle
+[170] Process 0: IO burst 3 complete
+[170] Process 0: Going from READY to RUNNING with next interrupt time = 172
+[170] Process 0: Remaining burst time = 20
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[172] Process 0: Interrupted
+[172] Process 0: Context switch to process 0 with next interrupt time = 174
+[172] Process 0: Remaining burst time = 18
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[174] Process 0: Interrupted
+[174] Process 0: Context switch to process 0 with next interrupt time = 176
+[174] Process 0: Remaining burst time = 16
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[176] Process 0: Interrupted
+[176] Process 0: Context switch to process 0 with next interrupt time = 178
+[176] Process 0: Remaining burst time = 14
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[178] Process 0: Interrupted
+[178] Process 0: Context switch to process 0 with next interrupt time = 180
+[178] Process 0: Remaining burst time = 12
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[180] Process 0: Interrupted
+[180] Process 0: Context switch to process 0 with next interrupt time = 182
+[180] Process 0: Remaining burst time = 10
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[182] Process 1: IO burst 3 complete
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[182] Process 0: Interrupted
+[182] Process 0: Context switch to process 1 with next interrupt time = 192
+[182] Process 0: Remaining burst time = 8
+[186] Process 2: IO burst 2 complete
+[186] Process 3: IO burst 2 complete
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 1
+[192] Process 1: Interrupted
+[192] Process 1: Context switch to process 0 with next interrupt time = 194
+[192] Process 1: Remaining burst time = 10
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[194] Process 0: Interrupted
+[194] Process 0: Context switch to process 2 with next interrupt time = 199
+[194] Process 0: Remaining burst time = 6
+[198] Process 2: CPU burst 3 complete
+[198] Process 3: Going from READY to RUNNING with next interrupt time = 200
+[198] Process 3: Remaining burst time = 20
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[200] Process 3: Interrupted
+[200] Process 3: Context switch to process 1 with next interrupt time = 210
+[200] Process 3: Remaining burst time = 6
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 1
+[210] Process 1: CPU burst 4 complete
+[210] Process 0: Going from READY to RUNNING with next interrupt time = 212
+[210] Process 0: Remaining burst time = 26
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[212] Process 0: Interrupted
+[212] Process 0: Context switch to process 3 with next interrupt time = 214
+[212] Process 0: Remaining burst time = 4
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[214] Process 3: Interrupted
+[214] Process 3: Context switch to process 0 with next interrupt time = 216
+[214] Process 3: Remaining burst time = 4
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[216] Process 0: Interrupted
+[216] Process 0: Context switch to process 3 with next interrupt time = 218
+[216] Process 0: Remaining burst time = 2
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[218] Process 2: IO burst 3 complete
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[218] Process 3: Interrupted
+[218] Process 3: Context switch to process 0 with next interrupt time = 220
+[218] Process 3: Remaining burst time = 2
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[220] Process 0: CPU burst 4 complete
+[220] Process 2: Going from READY to RUNNING with next interrupt time = 225
+[220] Process 2: Remaining burst time = 30
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 2
+[225] Process 2: Interrupted
+[225] Process 2: Context switch to process 3 with next interrupt time = 227
+[225] Process 2: Remaining burst time = 1
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[227] Process 3: CPU burst 3 complete
+[227] Process 2: Going from READY to RUNNING with next interrupt time = 232
+[227] Process 2: Remaining burst time = 28
+[228] Process 2: CPU burst 4 complete
+[228] CPU goes idle
+[236] Process 1: IO burst 4 complete
+[236] Process 1: Going from READY to RUNNING with next interrupt time = 246
+[236] Process 1: Remaining burst time = 12
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 1
+[246] Process 1: Interrupted
+[246] Process 1: Context switch to process 1 with next interrupt time = 256
+[246] Process 1: Remaining burst time = 2
+[248] Process 1: CPU burst 5 complete
+[248] CPU goes idle
+[250] Process 0: IO burst 4 complete
+[250] Process 0: Going from READY to RUNNING with next interrupt time = 252
+[250] Process 0: Remaining burst time = 3
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[252] Process 0: Interrupted
+[252] Process 0: Context switch to process 0 with next interrupt time = 254
+[252] Process 0: Remaining burst time = 1
+[253] Process 0: CPU burst 5 complete
+[253] CPU goes idle
+[255] Process 2: IO burst 4 complete
+[255] Process 3: IO burst 3 complete
+[255] Process 2: Going from READY to RUNNING with next interrupt time = 260
+[255] Process 2: Remaining burst time = 12
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 2
+[260] Process 2: Interrupted
+[260] Process 2: Context switch to process 3 with next interrupt time = 262
+[260] Process 2: Remaining burst time = 7
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[262] Process 3: Interrupted
+[262] Process 3: Context switch to process 2 with next interrupt time = 267
+[262] Process 3: Remaining burst time = 12
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 2
+[267] Process 2: Interrupted
+[267] Process 2: Context switch to process 3 with next interrupt time = 269
+[267] Process 2: Remaining burst time = 2
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[269] Process 3: Interrupted
+[269] Process 3: Context switch to process 2 with next interrupt time = 274
+[269] Process 3: Remaining burst time = 10
+[270] Process 1: IO burst 5 complete
+[271] Process 2: CPU burst 5 complete
+[271] Process 3: Going from READY to RUNNING with next interrupt time = 273
+[271] Process 3: Remaining burst time = 28
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[273] Process 3: Interrupted
+[273] Process 3: Context switch to process 1 with next interrupt time = 283
+[273] Process 3: Remaining burst time = 8
+[278] Process 0: IO burst 5 complete
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 1
+[283] Process 1: Interrupted
+[283] Process 1: Context switch to process 3 with next interrupt time = 285
+[283] Process 1: Remaining burst time = 8
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[285] Process 3: Interrupted
+[285] Process 3: Context switch to process 0 with next interrupt time = 287
+[285] Process 3: Remaining burst time = 6
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[287] Process 0: Interrupted
+[287] Process 0: Context switch to process 1 with next interrupt time = 297
+[287] Process 0: Remaining burst time = 3
+[295] Process 1: CPU burst 6 complete
+[295] Process 3: Going from READY to RUNNING with next interrupt time = 297
+[295] Process 3: Remaining burst time = 27
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[297] Process 3: Interrupted
+[297] Process 3: Context switch to process 0 with next interrupt time = 299
+[297] Process 3: Remaining burst time = 4
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[299] Process 2: IO burst 5 complete
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[299] Process 0: Interrupted
+[299] Process 0: Context switch to process 3 with next interrupt time = 301
+[299] Process 0: Remaining burst time = 1
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[301] Process 3: Interrupted
+[301] Process 3: Context switch to process 2 with next interrupt time = 306
+[301] Process 3: Remaining burst time = 2
+[304] Process 2: CPU burst 6 complete
+[304] Process 0: Going from READY to RUNNING with next interrupt time = 306
+[304] Process 0: Remaining burst time = 29
+[305] Process 0: CPU burst 6 complete
+[305] Process 3: Going from READY to RUNNING with next interrupt time = 307
+[305] Process 3: Remaining burst time = 22
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[307] Process 3: CPU burst 4 complete
+[307] CPU goes idle
+[322] Process 1: IO burst 6 complete
+[322] Process 1: Going from READY to RUNNING with next interrupt time = 332
+[322] Process 1: Remaining burst time = 15
+[327] Process 0: IO burst 6 complete
+[329] Process 3: IO burst 4 complete
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 1
+[332] Process 1: Interrupted
+[332] Process 1: Context switch to process 0 with next interrupt time = 334
+[332] Process 1: Remaining burst time = 5
+[333] Process 2: IO burst 6 complete
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[334] Process 0: Interrupted
+[334] Process 0: Context switch to process 3 with next interrupt time = 336
+[334] Process 0: Remaining burst time = 9
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[336] Process 3: CPU burst 5 complete
+[336] Process 1: Going from READY to RUNNING with next interrupt time = 346
+[336] Process 1: Remaining burst time = 23
+[341] Process 1: CPU burst 7 complete
+[341] Process 2: Going from READY to RUNNING with next interrupt time = 346
+[341] Process 2: Remaining burst time = 24
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 2
+[346] Process 2: Interrupted
+[346] Process 2: Context switch to process 0 with next interrupt time = 348
+[346] Process 2: Remaining burst time = 10
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[348] Process 0: Interrupted
+[348] Process 0: Context switch to process 2 with next interrupt time = 353
+[348] Process 0: Remaining burst time = 7
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 2
+[353] Process 2: Interrupted
+[353] Process 2: Context switch to process 0 with next interrupt time = 355
+[353] Process 2: Remaining burst time = 5
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[355] Process 0: Interrupted
+[355] Process 0: Context switch to process 2 with next interrupt time = 360
+[355] Process 0: Remaining burst time = 5
+[359] Process 3: IO burst 5 complete
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 2
+[360] Process 2: CPU burst 7 complete
+[360] Process 0: Going from READY to RUNNING with next interrupt time = 362
+[360] Process 0: Remaining burst time = 26
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[362] Process 0: Interrupted
+[362] Process 0: Context switch to process 3 with next interrupt time = 364
+[362] Process 0: Remaining burst time = 3
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[364] Process 3: Interrupted
+[364] Process 3: Context switch to process 0 with next interrupt time = 366
+[364] Process 3: Remaining burst time = 15
+[365] Process 1: IO burst 7 complete
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[366] Process 0: Interrupted
+[366] Process 0: Context switch to process 3 with next interrupt time = 368
+[366] Process 0: Remaining burst time = 1
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[368] Process 3: Interrupted
+[368] Process 3: Context switch to process 1 with next interrupt time = 378
+[368] Process 3: Remaining burst time = 13
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 1
+[378] Process 1: Interrupted
+[378] Process 1: Context switch to process 0 with next interrupt time = 380
+[378] Process 1: Remaining burst time = 10
+[379] Process 0: CPU burst 7 complete
+[379] Process 3: Going from READY to RUNNING with next interrupt time = 381
+[379] Process 3: Remaining burst time = 21
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[381] Process 3: Interrupted
+[381] Process 3: Context switch to process 1 with next interrupt time = 391
+[381] Process 3: Remaining burst time = 11
+[386] Process 2: IO burst 7 complete
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 1
+[391] Process 1: CPU burst 8 complete
+[391] Process 3: Going from READY to RUNNING with next interrupt time = 393
+[391] Process 3: Remaining burst time = 21
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[393] Process 3: Interrupted
+[393] Process 3: Context switch to process 2 with next interrupt time = 398
+[393] Process 3: Remaining burst time = 9
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 2
+[398] Process 2: Interrupted
+[398] Process 2: Context switch to process 3 with next interrupt time = 400
+[398] Process 2: Remaining burst time = 13
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[400] Process 0: IO burst 7 complete
+[400] Process 3: Interrupted
+[400] Process 3: Context switch to process 2 with next interrupt time = 405
+[400] Process 3: Remaining burst time = 7
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 2
+[405] Process 2: Interrupted
+[405] Process 2: Context switch to process 3 with next interrupt time = 407
+[405] Process 2: Remaining burst time = 8
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[407] Process 3: Interrupted
+[407] Process 3: Context switch to process 0 with next interrupt time = 409
+[407] Process 3: Remaining burst time = 5
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[409] Process 0: Interrupted
+[409] Process 0: Context switch to process 2 with next interrupt time = 414
+[409] Process 0: Remaining burst time = 12
+[412] Process 1: IO burst 8 complete
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 2
+[414] Process 2: Interrupted
+[414] Process 2: Context switch to process 3 with next interrupt time = 416
+[414] Process 2: Remaining burst time = 3
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[416] Process 3: Interrupted
+[416] Process 3: Context switch to process 0 with next interrupt time = 418
+[416] Process 3: Remaining burst time = 3
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[418] Process 0: Interrupted
+[418] Process 0: Context switch to process 1 with next interrupt time = 428
+[418] Process 0: Remaining burst time = 10
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 1
+[428] Process 1: CPU burst 9 complete
+[428] Process 2: Going from READY to RUNNING with next interrupt time = 433
+[428] Process 2: Remaining burst time = 20
+[431] Process 2: CPU burst 8 complete
+[431] Process 3: Going from READY to RUNNING with next interrupt time = 433
+[431] Process 3: Remaining burst time = 30
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[433] Process 3: Interrupted
+[433] Process 3: Context switch to process 0 with next interrupt time = 435
+[433] Process 3: Remaining burst time = 1
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[435] Process 0: Interrupted
+[435] Process 0: Context switch to process 3 with next interrupt time = 437
+[435] Process 0: Remaining burst time = 8
+[436] Process 3: CPU burst 6 complete
+[436] Process 0: Going from READY to RUNNING with next interrupt time = 438
+[436] Process 0: Remaining burst time = 26
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[438] Process 0: Interrupted
+[438] Process 0: Context switch to process 0 with next interrupt time = 440
+[438] Process 0: Remaining burst time = 6
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[440] Process 0: Interrupted
+[440] Process 0: Context switch to process 0 with next interrupt time = 442
+[440] Process 0: Remaining burst time = 4
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[442] Process 0: Interrupted
+[442] Process 0: Context switch to process 0 with next interrupt time = 444
+[442] Process 0: Remaining burst time = 2
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[444] Process 0: CPU burst 8 complete
+[444] CPU goes idle
+[448] Process 1: IO burst 9 complete
+[448] Process 1: Going from READY to RUNNING with next interrupt time = 458
+[448] Process 1: Remaining burst time = 17
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 1
+[458] Process 1: Interrupted
+[458] Process 1: Context switch to process 1 with next interrupt time = 468
+[458] Process 1: Remaining burst time = 7
+[461] Process 2: IO burst 8 complete
+[462] Process 3: IO burst 6 complete
+[465] Process 1: CPU burst 10 complete
+		[465] Process 1: Exiting
+[465] Process 2: Going from READY to RUNNING with next interrupt time = 470
+[465] Process 2: Remaining burst time = 0
+[468] Process 0: IO burst 8 complete
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 2
+[470] Process 2: Interrupted
+[470] Process 2: Context switch to process 3 with next interrupt time = 472
+[470] Process 2: Remaining burst time = 12
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[472] Process 3: Interrupted
+[472] Process 3: Context switch to process 0 with next interrupt time = 474
+[472] Process 3: Remaining burst time = 11
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[474] Process 0: Interrupted
+[474] Process 0: Context switch to process 2 with next interrupt time = 479
+[474] Process 0: Remaining burst time = 4
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 2
+[479] Process 2: Interrupted
+[479] Process 2: Context switch to process 3 with next interrupt time = 481
+[479] Process 2: Remaining burst time = 7
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[481] Process 3: Interrupted
+[481] Process 3: Context switch to process 0 with next interrupt time = 483
+[481] Process 3: Remaining burst time = 9
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[483] Process 0: Interrupted
+[483] Process 0: Context switch to process 2 with next interrupt time = 488
+[483] Process 0: Remaining burst time = 2
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 2
+[488] Process 2: Interrupted
+[488] Process 2: Context switch to process 3 with next interrupt time = 490
+[488] Process 2: Remaining burst time = 2
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[490] Process 3: Interrupted
+[490] Process 3: Context switch to process 0 with next interrupt time = 492
+[490] Process 3: Remaining burst time = 7
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[492] Process 0: CPU burst 9 complete
+[492] Process 2: Going from READY to RUNNING with next interrupt time = 497
+[492] Process 2: Remaining burst time = 22
+[494] Process 2: CPU burst 9 complete
+[494] Process 3: Going from READY to RUNNING with next interrupt time = 496
+[494] Process 3: Remaining burst time = 22
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[496] Process 3: Interrupted
+[496] Process 3: Context switch to process 3 with next interrupt time = 498
+[496] Process 3: Remaining burst time = 5
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[498] Process 3: Interrupted
+[498] Process 3: Context switch to process 3 with next interrupt time = 500
+[498] Process 3: Remaining burst time = 3
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[500] Process 3: Interrupted
+[500] Process 3: Context switch to process 3 with next interrupt time = 502
+[500] Process 3: Remaining burst time = 1
+[501] Process 3: CPU burst 7 complete
+[501] CPU goes idle
+[514] Process 0: IO burst 9 complete
+[514] Process 0: Going from READY to RUNNING with next interrupt time = 516
+[514] Process 0: Remaining burst time = 19
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[516] Process 2: IO burst 9 complete
+[516] Process 0: Interrupted
+[516] Process 0: Context switch to process 0 with next interrupt time = 518
+[516] Process 0: Remaining burst time = 17
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[518] Process 0: Interrupted
+[518] Process 0: Context switch to process 2 with next interrupt time = 523
+[518] Process 0: Remaining burst time = 15
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 2
+[523] Process 2: Interrupted
+[523] Process 2: Context switch to process 0 with next interrupt time = 525
+[523] Process 2: Remaining burst time = 15
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[525] Process 0: Interrupted
+[525] Process 0: Context switch to process 2 with next interrupt time = 530
+[525] Process 0: Remaining burst time = 13
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[530] Process 3: IO burst 7 complete
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 2
+[530] Process 2: Interrupted
+[530] Process 2: Context switch to process 0 with next interrupt time = 532
+[530] Process 2: Remaining burst time = 10
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[532] Process 0: Interrupted
+[532] Process 0: Context switch to process 3 with next interrupt time = 534
+[532] Process 0: Remaining burst time = 11
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[534] Process 3: Interrupted
+[534] Process 3: Context switch to process 2 with next interrupt time = 539
+[534] Process 3: Remaining burst time = 12
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 2
+[539] Process 2: Interrupted
+[539] Process 2: Context switch to process 0 with next interrupt time = 541
+[539] Process 2: Remaining burst time = 5
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[541] Process 0: Interrupted
+[541] Process 0: Context switch to process 3 with next interrupt time = 543
+[541] Process 0: Remaining burst time = 9
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[543] Process 3: Interrupted
+[543] Process 3: Context switch to process 2 with next interrupt time = 548
+[543] Process 3: Remaining burst time = 10
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 2
+[548] Process 2: CPU burst 10 complete
+		[548] Process 2: Exiting
+[548] Process 0: Going from READY to RUNNING with next interrupt time = 550
+[548] Process 0: Remaining burst time = 0
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[550] Process 0: Interrupted
+[550] Process 0: Context switch to process 3 with next interrupt time = 552
+[550] Process 0: Remaining burst time = 7
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[552] Process 3: Interrupted
+[552] Process 3: Context switch to process 0 with next interrupt time = 554
+[552] Process 3: Remaining burst time = 8
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[554] Process 0: Interrupted
+[554] Process 0: Context switch to process 3 with next interrupt time = 556
+[554] Process 0: Remaining burst time = 5
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[556] Process 3: Interrupted
+[556] Process 3: Context switch to process 0 with next interrupt time = 558
+[556] Process 3: Remaining burst time = 6
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[558] Process 0: Interrupted
+[558] Process 0: Context switch to process 3 with next interrupt time = 560
+[558] Process 0: Remaining burst time = 3
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[560] Process 3: Interrupted
+[560] Process 3: Context switch to process 0 with next interrupt time = 562
+[560] Process 3: Remaining burst time = 4
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 0
+[562] Process 0: Interrupted
+[562] Process 0: Context switch to process 3 with next interrupt time = 564
+[562] Process 0: Remaining burst time = 1
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[564] Process 3: Interrupted
+[564] Process 3: Context switch to process 0 with next interrupt time = 566
+[564] Process 3: Remaining burst time = 2
+[565] Process 0: CPU burst 10 complete
+		[565] Process 0: Exiting
+[565] Process 3: Going from READY to RUNNING with next interrupt time = 567
+[565] Process 3: Remaining burst time = 0
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[567] Process 3: CPU burst 8 complete
+[567] CPU goes idle
+[595] Process 3: IO burst 8 complete
+[595] Process 3: Going from READY to RUNNING with next interrupt time = 597
+[595] Process 3: Remaining burst time = 10
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[597] Process 3: Interrupted
+[597] Process 3: Context switch to process 3 with next interrupt time = 599
+[597] Process 3: Remaining burst time = 8
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[599] Process 3: Interrupted
+[599] Process 3: Context switch to process 3 with next interrupt time = 601
+[599] Process 3: Remaining burst time = 6
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[601] Process 3: Interrupted
+[601] Process 3: Context switch to process 3 with next interrupt time = 603
+[601] Process 3: Remaining burst time = 4
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[603] Process 3: Interrupted
+[603] Process 3: Context switch to process 3 with next interrupt time = 605
+[603] Process 3: Remaining burst time = 2
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[605] Process 3: CPU burst 9 complete
+[605] CPU goes idle
+[634] Process 3: IO burst 9 complete
+[634] Process 3: Going from READY to RUNNING with next interrupt time = 636
+[634] Process 3: Remaining burst time = 3
+[timer :: handleTimeout] Interrupt Signal sent to Process 0
+[process :: sigUsr1Handler] Got SIGUSR1 from timer for Process 3
+[636] Process 3: Interrupted
+[636] Process 3: Context switch to process 3 with next interrupt time = 638
+[636] Process 3: Remaining burst time = 1
+[637] Process 3: CPU burst 10 complete
+		[637] Process 3: Exiting
+[637] CPU goes idle
+		[Launcher] All processes exited
